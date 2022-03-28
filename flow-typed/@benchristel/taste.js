@@ -1,3 +1,5 @@
+// @flow
+
 declare module "@benchristel/taste" {
     declare type Predicate = (...args: Array<any>) => boolean
     declare opaque type Tests

@@ -1,0 +1,19 @@
+{
+  "name": "dalbozofgurth.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dalbozofgurth/dalbozofgurth.github.io.git",
+  "author": "Ben Christel <bchristel@pivotal.io>",
+  "license": "MIT",
+  "dependencies": {
+    "@benchristel/taste": "^0.2.1",
+    "@snowpack/plugin-webpack": "^3.0.0",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.174.1",
+    "react": "^17.0.2",
+    "snowpack": "^3.8.8",
+    "snowpack-flow-remove-types": "^0.0.0"
+  }
+}

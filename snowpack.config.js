@@ -3,19 +3,21 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-  mount: {
-    /* ... */
-  },
+  exclude: [
+    "**/node_modules/**/*",
+    "**/.git/**/*",
+  ],
   plugins: [
     ["snowpack-flow-remove-types"],
   ],
-  packageOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
+  optimize: {
+    bundle: true,
+    minify: true,
+    target: "es6",
   },
   buildOptions: {
-    /* ... */
+    sourcemap: "inline",
+    // Output builds to a folder that GitHub Pages can serve
+    out: "docs",
   },
 };
